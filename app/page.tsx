@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const url = "/img"
+
 export default function Home() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function Home() {
       </div>
 
       <div className="py-16">
-        <Image className="w-full" src="/img/marco.jpg" alt="" width={2000} height={2000} />
+        <Image className="w-full" src={`${url}/marco.jpg`} alt="" width={2000} height={2000} />
       </div>
     </>
   );

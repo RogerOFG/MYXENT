@@ -1,14 +1,19 @@
+"use client"
+
+import { useParams } from 'next/navigation';
 import { notFound } from 'next/navigation';
 import { Products } from '../../products';
 import Image from 'next/image';
 
-interface Props {
-    params: {
-        name: string
-    };
-}
+const url = "/img"
 
-export default function Product({ params }: Props) {
+export default function Product() {
+    const params = useParams();
+
+    if (!params || !params.name) {
+        notFound();
+    }
+
     const product = Products.find((p) => p.slug === params.name);
 
     if (!product) {
@@ -32,10 +37,10 @@ export default function Product({ params }: Props) {
                     <h3 className='mb-8 text-2xl font-medium'>Caracteristicas</h3>
                     <div className=' flex flex-col gap-7'>
                         {product.property?.map((p, pIndex) => (
-                            <div className='flex items-center gap-2'>
-                                <Image src="/img/flecha/right-arrow-b.svg" className='w-[20px] dark:hidden' alt="Arrow" width={20} height={20} />
-                                <Image src="/img/flecha/right-arrow-w.png" className='w-[20px] hidden dark:block' alt="Arrow" width={20} height={20} />
-                                <p className='whitespace-pre-line' key={pIndex}>{p}</p>
+                            <div className='flex items-center gap-2' key={pIndex}>
+                                <Image src={`${url}/flecha/right-arrow-b.svg`} className='w-[20px] dark:hidden' alt="Arrow" width={20} height={20} />
+                                <Image src={`${url}/flecha/right-arrow-w.png`} className='w-[20px] hidden dark:block' alt="Arrow" width={20} height={20} />
+                                <p className='whitespace-pre-line'>{p}</p>
                             </div>
                         ))}
                     </div>

@@ -1,8 +1,10 @@
+const url = "/img"
+
 export const Products = [
     {
         id: 1,
         name: "Xiaomi Redmi Note 8",
-        slug: "Xiaomi-Redmi-Note-8",
+        slug: "xiaomi-redmi-note-8",
         data: "La pantalla de este modelo Redmi tiene un tamaño de 6,3 pulgadas y presenta una resolución FHD+ de 2340 x 1080 px. Esto genera una densidad de 409 ppp y su notch en forma de agua permite disfrutar de un formato de visualización de 19,5:9.",
         fullData: `
             El Redmi Note 8 es un teléfono que tiene un hermano mayor un poco más potente, el Redmi Note 8 Pro. El Note 8, sin embargo, no echa de menos las cosas que sí tiene su hermano mayor pues se concentra en satisfacer a usuarios que buscan un teléfono asequible y con un buen balance de especificaciones. El Xiaomi Redmi Note 8 no será el teléfono más guapo, pero al menos tiene lo suficiente y adopta todo lo necesario de las tendencias como el lector de huellas trasero, cámara frontal de gota y delgados biseles alrededor de una pantalla. \n 
@@ -25,13 +27,13 @@ export const Products = [
             Peso: 190 g`,
             `Cuenta con: Lector de huellas y Desbloqueo facial`,
         ],
-        img: "/img/Productos/XiaomiRedmiNote8.png",
-        svg: "/img/imgProduct/XiaomiRedmiNote8-svg.png"
+        img: `${url}/Productos/XiaomiRedmiNote8.png`,
+        svg: `${url}/imgProduct/XiaomiRedmiNote8-svg.png`
     },
     {
         id: 2,
         name: "Xiaomi Redmi 9",
-        slug: "Xiaomi-Redmi-9",
+        slug: "xiaomi-redmi-9",
         data: "Cambia libremente de un modo a otro para capturar varios tipos de escenarios con la cámara cuádruple AI. Ampliar tus horizontes. La resolución 2340x1080 full HD + garantiza una experiencia visual inmersiva y ofrece una visión clara del mundo que te rodea.",
         fullData: `El Xiaomi Redmi 9 es un smartphone Android con pantalla Full HD+ de 6.53 pulgadas y potenciado por un procesador Mediatek Helio G80 y 32GB de almacenamiento interno. La cámara frontal de gran angular para capturar selfies es de 8 megapixels y el Redmi 9 completa sus características con una generosa batería de 5020 mAh con soporte para carga rápida, lector de huellas y corre MIUI 12 basado en Android 10. Hermano menor de los Redmi Note 9 y Note 9S, pero un paso por encima de los Redmi 9A y 9C, este móvil es uno de los mas sencillos y economicos entre los gama media.`,
         property: [
@@ -47,13 +49,13 @@ export const Products = [
             `Peso: 198 g​`,
             `Cuenta con: Lector de huellas trasero`,
         ],
-        img: "/img/Productos/XiaomiRedmi9.png",
-        svg: "/img/imgProduct/XiaomiRedmi9-svg.png"
+        img: `${url}/Productos/XiaomiRedmi9.png`,
+        svg: `${url}/imgProduct/XiaomiRedmi9-svg.png`
     },
     {
         id: 3,
         name: "Xiaomi Redmi Note 9 Pro",
-        slug: "Xiaomi-Redmi-Note-9-Pro",
+        slug: "xiaomi-redmi-note-9-pro",
         data: "El Xiaomi Redmi Note 9 Pro es parte de la nueva generación de la serie Redmi Note de Xiaomi. Con una pantalla Full HD+ de 6.67 pulgadas, el Redmi Note 9 Pro está potenciado por un procesador Snapdragon 720G.",
         fullData: `El Redmi Note 9 Pro, a diferencia del Redmi Note 9 y el Redmi Note 9S , incorpora el procesador Qualcomm Snapdragon 720G acompañado de 4 o 6 GB de memoria RAM y una capacidad de almacenamiento interno de 128 GB. Además tenemos la posibilidad de aumentar la memoria a través de una tarjeta microSD. Con cuatro cámaras traseras y un sensor principal de 64 MP. La batería alcanza los 5020 mAh y carga rápida a 33W. El Redmi Note 9 Pro funciona con la capa de personalización de Xiaomi MIUI 11, basada en Android 10`,
         property: [
@@ -77,13 +79,13 @@ export const Products = [
             `Cámara frontal: Resolución: 32.0`,
             `Cuenta con: Sensor de huellas lateral`,
         ],
-        img: "/img/Productos/XiaomiRedmiNote9Pro.png",
-        svg: "/img/imgProduct/XiaomiRedmiNote9Pro-svg.png"
+        img: `${url}/Productos/XiaomiRedmiNote9Pro.png`,
+        svg: `${url}/imgProduct/XiaomiRedmiNote9Pro-svg.png`
     },
     {
         id: 4,
         name: "Xiaomi Mi Band 5",
-        slug: "Xiaomi-Mi-Band-5",
+        slug: "xiaomi-mi-band-5",
         data: "Nueva Pantalla Táctil de Color Amoled. Mayor Resistencia al Agua: Xiaomi Mi Band 5 puede funcionar bien bajo el agua y cumplir con sus tareas diarias. Funciones Convenientes: Vea instantáneamente SMS, llamadas, notificaciones de aplicaciones y música.",
         fullData: `
             Mi Band 5, la pulsera más vendida de Xiaomi, Pantalla a color – Tamaño de 1.1″ – Dial intercambiable – 11 modos deportivos – Resistencia al agua – Entrenamiento de respiración – Sensor de frecuencia cardiaca PPG – Sensor de aceleración de 3 ejes – Giroscopio de 3 ejes – Monitor del sueño con análisis de la fase REM – Control del ciclo menstrual – Control de la cámara del móvil – Hasta 14 días de uso – Ajustable. \n
@@ -114,13 +116,13 @@ export const Products = [
             Carga: hasta 2 horas
             Carga mediante carga magnética`,
         ],
-        img: "/img/Productos/XiaomiMyBand5.png",
-        svg: "/img/imgProduct/XiaomiMiBand5-svg.png"
+        img: `${url}/Productos/XiaomiMyBand5.png`,
+        svg: `${url}/imgProduct/XiaomiMiBand5-svg.png`
     },
     {
         id: 5,
         name: "Xiaomi Mi Watch Lite",
-        slug: "Xiaomi-Mi-Watch-Lite",
+        slug: "xiaomi-mi-watch-lite",
         data: "Xiaomi Mi Watch Lite tiene una gran pantalla de 1.4 pulgadas a color que te muestra toda la información que puedes necesitar durante el día a día. Pero además de mostrar información te permite personalizarla.",
         fullData: `
             Su diseño es espectacular, parecido a los iWatch de Apple. Pesa sólo 35 gramos y tiene una pantalla LCD de 1.4 pulgadas y a todo color. Podrás personalizar su pantalla con distintos tipos de esfera y sólo tendrás que deslizar para ver las distintas opciones: sensor de ritmo cardíaco, medición de sueño, control de la respiración… y muy importante GPS, por lo que podrás salir a hacer deporte con él, sin necesidad de llevar tu móvil, y después la información se ira directamente a tu móvil. \n
@@ -141,7 +143,7 @@ export const Products = [
             `Giroscopio`,
             `GPS`,
         ],
-        img: "/img/Productos/XiaomiMiWatchLite.png",
-        svg: "/img/imgProduct/XiaomiMiWatchLite-svg.png"
+        img: `${url}/Productos/XiaomiMiWatchLite.png`,
+        svg: `${url}/imgProduct/XiaomiMiWatchLite-svg.png`
     }
 ]
