@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Blog de información de dispositivos moviles",
 };
 
-const url = "/img"
+const url = "img"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

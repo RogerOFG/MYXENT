@@ -1,4 +1,4 @@
-const url = "/img"
+const url = "img"
 
 export const Products = [
     {
