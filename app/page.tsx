@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const url = "/img"
+const url = "img"
 
 export default function Home() {
   return (

@@ -23,7 +23,7 @@ export function Card({ name, slug, data, patch }: Props) {
                         <h2 className='dark:text-black text-lg'>{name}</h2>
                         <p className={`${styles.body__card_text} dark:text-black flex-1`}>{data}</p>
 
-                        <Link href={`/Products/${slug}`} className={styles.body__card_btn}>
+                        <Link href={`/Products/Product?slug=${slug}`} className={styles.body__card_btn}>
                             Leer Más
                             <div className={styles.arrow__wrapper}>
                                 <div className={styles.arrow}></div>
