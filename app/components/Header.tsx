@@ -16,8 +16,8 @@ export function Header({ patch }: Props){
                 <div className="w-full pt-4">
                     <nav className="py-1 bg-gradient-to-r from-gray-400 via-black to-gray-400 dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black rounded-lg">
                         <ul className="flex justify-center gap-6 text-[15px] text-white">
-                            <li><Link href="/">Inicio</Link></li>
-                            <li><Link href="/Products">Productos</Link></li>
+                            <li><Link href="./">Inicio</Link></li>
+                            <li><Link href="./Products">Productos</Link></li>
                         </ul>
                     </nav>
                 </div>
