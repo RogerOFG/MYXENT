@@ -21,14 +21,16 @@ type ProductType = {
 export default function Product() {
     const router = useRouter();
     const [product, setProduct] = useState<ProductType | null>(null);
+
     useEffect(() => {
         const searchParams = new URLSearchParams(window.location.search);
         const slug = searchParams.get('slug');
-    
+
         if (!slug) {
             router.replace('/404');
             return;
         }
+
         const foundProduct = Products.find((p) => p.slug === slug);
         if (!foundProduct) {
             router.replace('/404');
