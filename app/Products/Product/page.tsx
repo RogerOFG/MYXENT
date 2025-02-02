@@ -1,14 +1,43 @@
+"use client"
+
 import { Products } from '../../products';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
-const url = "img"
+const url = "../img"
+
+type ProductType = {
+    id: number;
+    name: string;
+    slug: string;
+    data: string;
+    fullData: string;
+    property: string[];
+    img: string;
+    svg: string;
+};
 
 export default function Product() {
-    const product = Products.find((p) => p.id == 4)
+    const router = useRouter();
+    const [product, setProduct] = useState<ProductType | null>(null);
+    useEffect(() => {
+        const searchParams = new URLSearchParams(window.location.search);
+        const slug = searchParams.get('slug');
+    
+        if (!slug) {
+            router.replace('/404');
+            return;
+        }
+        const foundProduct = Products.find((p) => p.slug === slug);
+        if (!foundProduct) {
+            router.replace('/404');
+            return;
+        }
+        setProduct(foundProduct);
+    }, [router]);
 
-    if (!product){
-        return
-    }
+    if (!product) return <div className="pt-14">Cargando producto...</div>;
 
     return( 
         <div className="pt-14">
