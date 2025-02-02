@@ -45,7 +45,7 @@ export default function Product() {
                 {/* IMAGEN Y DESCRIPCION */}
                 <div>
                     <h3 className="text-3xl font-medium text-center">{product.name}</h3>
-                    <Image src={`${product.svg}`} className='w-[250px] max-w-full m-auto mt-14 mb-8' alt={product.name} width={500} height={500} />
+                    <Image src={`../${product.svg}`} className='w-[250px] max-w-full m-auto mt-14 mb-8' alt={product.name} width={500} height={500} />
                     <p className="mt-4 whitespace-pre-line">{product.fullData}</p>
                 </div>
 
