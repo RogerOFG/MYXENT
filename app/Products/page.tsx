@@ -10,14 +10,14 @@ export default function Home() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 1000);
+        }, 500);
 
         return () => clearTimeout(timer);
     }, []);
 
     if (isLoading) {
         return (
-            <div className="flex items-center justify-center flex-wrap w-[1100px] m-auto">
+            <div className="flex items-center justify-center flex-wrap w-[1100px] max-w-full m-auto">
                 <div role="status" className="flex flex-wrap justify-center gap-10 animate-pulse">
                     <div className="flex items-center justify-center w-[300px] h-[360px] bg-gray-300 rounded-[20px] dark:bg-gray-700">
                         <svg className="w-14 h-14 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
@@ -54,7 +54,7 @@ export default function Home() {
     }
 
     return (
-        <div className="flex items-center justify-center flex-wrap w-[1100px] m-auto">
+        <div className="flex items-center justify-center flex-wrap w-[1100px] max-w-full m-auto">
             {Products.map((product, index) => (
                 <Card 
                     key={index}
