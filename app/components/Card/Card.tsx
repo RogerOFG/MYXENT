@@ -20,7 +20,7 @@ export function Card({ name, slug, data, patch }: Props) {
                 </div>
                 <div className={styles.card__back}>
                     <div className={`${styles.body__card_back} flex flex-col min-h-full`}>
-                        <h2 className='dark:text-black text-lg'>{name}</h2>
+                        <h2 className='dark:text-black sm:text-lg'>{name}</h2>
                         <p className={`${styles.body__card_text} dark:text-black flex-1`}>{data}</p>
 
                         <Link href={`/Products/Product?slug=${slug}`} className={styles.body__card_btn}>

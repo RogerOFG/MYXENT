@@ -141,3 +141,23 @@
     right: 0;
     border-color: var(--hover-color);
 }
+
+@media screen and (max-width: 768px){
+    .card__father{
+        width: 270px;
+    }
+
+    .card{
+        height: 320px;
+    }
+
+    .body__card_text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .body__card_btn{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
